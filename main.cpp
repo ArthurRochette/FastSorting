@@ -83,8 +83,8 @@ void drawing(sf::RenderWindow *window, const int *dataSet, int dataSize) {
  * FastSorting
  * *dataSet : array of int
  * dataSize: size of the array
- * pivot : index in the array of the pivot
- * off : value where start sorting
+ * pivot : pivot's index in the array 
+ * off : value where we start sorting
  */
 void FastSorting(int *dataSet, int dataSize, int pivot, int off) {
     actual_pivot = pivot;
@@ -108,10 +108,6 @@ void FastSorting(int *dataSet, int dataSize, int pivot, int off) {
 
 }
 
-/*
- * main
- * what did you expecte for ??
- */
 int main() {
     int dataSetSize = 10;
     int **dataSet = new int *;
